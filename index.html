@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body class="bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="./images/logo.svg" class="navbar-brand mt-2 ms-5 me-5" alt="brand-log">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 150px;">
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./images/icon-todo.svg" alt="">  &nbsp;Todo List
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./images/icon-calendar.svg" alt=""> &nbsp;Calendar
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./images/icon-reminders.svg" alt=""> &nbsp;Reminders
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <img src="./images/icon-planning.svg" alt=""> &nbsp;Planning
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Company
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    History
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Our Team
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link disabled" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <ul class="nav justify-content-end" style="list-style: none;">
+                    <li class="nav-item me-2">
+                        <a class="nav-link text-dark" href="#">
+                            Login
+                        </a>
+                    </li>
+                    <li class="nav-item me-5">
+                        <button class="btn btn-outline-dark rounded-4" type="submit">Register</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container mt-5">
+            <div class="row justify-content-center text-start column-gap-5">
+                <div class="col-lg-5 col-sm-12 order-lg-1 order-2 pt-4 content">
+                    <h1 class="display-2 fw-bold pt-5 pb-4">Make <br> remote work</h1>
+                    <p class="lh-base fw-semibold fs-5 text-secondary pb-4
+                    pe-5 me-4 intro">Get your team in sync, no matter your location.
+                    Streamline processes,create team rituals, and
+                    watch productivity soar.</p>
+                    <button type="button" class="btn btn-dark rounded-3">Learn more</button>
+                    <div class="img-container pt-5 mt-5">
+                        <img src="./images/client-databiz.svg"
+                        alt="databiz-image" class="image pe-4 pic">
+                        <img src="./images/client-audiophile.svg"
+                        alt="audiophile-image" class="image pe-4 pic">
+                        <img src="./images/client-meet.svg"
+                        alt="meet-image" class="pe-4 pic">
+                        <img src="./images/client-maker.svg"
+                        alt="maker-image" class="picture">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-sm-12 order-lg-2 order-1 images">
+                    <img width="90%" height="90%" src="./images/image-hero-desktop.png" alt="" class="d-none d-lg-block desktop-image">
+                    <img width="90%" height="90%" src="./images/image-hero-mobile.png" alt="" class="d-lg-none mobile-image">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="attribution pt-5">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Your Name Here</a>.
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
+</body>
+
+</html>
